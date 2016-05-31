@@ -1,8 +1,4 @@
 <CoeffData>
-  <Properties>
-    <CalibrationDate/>
-    <FileGenDate date="2013-10-04" time="19:23:42.085597"/>
-  </Properties>
   <Coeffs>
     <Coeff description="" value="-2364" id="Pitch_offset"/>
     <Coeff description="" value="-2650" id="Yaw_offset"/>
@@ -18,7 +14,7 @@
     <Coeff description="" value="-0.087266" id="thumb_locmdlmt"/>
     <Coeff description="" value="-500" id="thumb_posKP"/>
     <Coeff description="" value="0" id="thumb_posKD"/>
-    <Coeff description="" value="1000" id="thumb_dutylmt"/>
+    <Coeff description="" value="50" id="thumb_dutylmt"/>
     <Coeff description="" value="0" id="WL_Torq_KP"/>
     <Coeff description="" value="0" id="WL_Torq_KD"/>
     <Coeff description="" value="1671" id="WL_hiposcmdlmt"/>
