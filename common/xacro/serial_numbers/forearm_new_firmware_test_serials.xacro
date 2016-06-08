@@ -1,0 +1,12 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="forearm_new_firmware_test_serials">
+
+	<xacro:property name="leftWristBottomActuatorSerialNumber" value="v_a_006" />
+	<xacro:property name="leftWristTopActuatorSerialNumber" value="v_b_002" />
+	<xacro:property name="leftforearmJ1SerialNumber" value="v_c_002" />
+	<xacro:property name="leftforearmJ2SerialNumber" value="v_d_001" />
+	<xacro:property name="leftforearmJ3SerialNumber" value="v_d_001" />
+	<xacro:property name="leftforearmJ4SerialNumber" value="v_d_001" />
+	<xacro:property name="leftforearmJ5SerialNumber" value="v_d_001" />
+	<xacro:property name="leftforearmJ6SerialNumber" value="v_d_001" />
+    
+</robot>

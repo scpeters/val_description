@@ -1,0 +1,7 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="forearm_new_firmware_test">
+
+	<xacro:property name="instance" value="forearm_new_firmware_test" />
+	<xacro:include filename="$(find val_description)/common/xacro/serial_numbers/forearm_new_firmware_test_serials.xacro" />
+    <xacro:include filename="$(find val_description)/instance/instances/robots/xacro/common/forearm_new_firmware_template.xacro"/>
+
+</robot>

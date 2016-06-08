@@ -6,6 +6,7 @@
     <xacro:include filename="$(find val_description)/common/xacro/serial_numbers/valkyrie_B_serials.xacro"/>
     <xacro:include filename="$(find val_description)/common/xacro/api/valkyrie_B_api.xacro"/>
     <xacro:include filename="$(find val_description)/model/robots/common/xacro/leg/link_names.xacro"/>
+    <xacro:include filename="$(find val_description)/common/xacro/nodes/valkyrie_nodes.xacro"/>
     
     <xacro:property name="prefix" value="right"/>
     <xacro:property name="reflect" value="-1"/>

@@ -1,0 +1,12 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="forearm_new_firmware_test_api">
+                                            
+    <xacro:property name="IndexPitchApi" value="robot_hardware_interface/TurbodriverAPI" />
+    <xacro:property name="MiddlePitchApi" value="robot_hardware_interface/TurbodriverAPI" />
+    <xacro:property name="PinkyPitchApi" value="robot_hardware_interface/TurbodriverAPI" />
+    <xacro:property name="ThumbRollApi" value="robot_hardware_interface/TurbodriverAPI" />
+    <xacro:property name="ThumbPitch1Api" value="robot_hardware_interface/TurbodriverAPI" />
+    <xacro:property name="ThumbPtich2Api" value="robot_hardware_interface/TurbodriverAPI" />
+    <xacro:property name="WristBottomActuatorApi" value="robot_hardware_interface/TurbodriverAPI_linear_futek" />
+    <xacro:property name="WristTopActuatorApi" value="robot_hardware_interface/TurbodriverAPI_linear_futek" />
+    
+</robot>

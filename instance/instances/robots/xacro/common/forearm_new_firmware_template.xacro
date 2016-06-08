@@ -1,0 +1,18 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="valkyrie_template">
+
+	<xacro:include filename="$(find val_description)/instance/instances/robots/xacro/mechanisms/mechanisms.xacro"/>
+    <xacro:include filename="$(find val_description)/common/xacro/joint_names/valkyrie_joint_names.xacro"/>
+	<xacro:include filename="$(find val_description)/common/xacro/nodes/forearm_new_firmware_test_nodes.xacro" />
+	<xacro:include filename="$(find val_description)/common/xacro/actuator_names/valkyrie_actuator_names.xacro"/>
+
+	<RobotInstance id="${instance}" />
+
+	<xacro:all_channels/>
+
+	<Mechanisms>
+
+		<xacro:forearm_new_firmware_mechanism prefix="left" forearm_j1_serial_number="${leftforearmJ1SerialNumber}" forearm_j2_serial_number="${leftforearmJ2SerialNumber}" forearm_j3_serial_number="${leftforearmJ3SerialNumber}" forearm_j4_serial_number="${leftforearmJ4SerialNumber}" forearm_j5_serial_number="${leftforearmJ5SerialNumber}" forearm_j6_serial_number="${leftforearmJ6SerialNumber}" wrist_bottom_serial_number="${leftWristBottomActuatorSerialNumber}" wrist_top_serial_number="${leftWristTopActuatorSerialNumber}" />
+		
+	</Mechanisms>
+    
+</robot>

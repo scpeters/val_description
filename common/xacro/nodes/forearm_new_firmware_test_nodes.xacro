@@ -1,0 +1,15 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="forearm_new_firmware_test_nodes">
+
+	<xacro:property name="WristBottomActuatorNode" value="/${prefix}_forearm/wrist/bottom_actuator" />
+	<xacro:property name="WristTopActuatorNode" value="/${prefix}_forearm/wrist/top_actuator" />
+	<xacro:property name="IndexFingerPitch1Node" value="/${prefix}_forearm/indexpitch"/>
+
+	<xacro:property name="MiddleFingerPitch1Node" value="/${prefix}_forearm/middlepitch"/>
+
+	<xacro:property name="PinkyPitch1Node" value="/${prefix}_forearm//pinkypitch"/>
+
+	<xacro:property name="ThumbRollNode" value="/${prefix}_forearm/thumbroll"/>
+	<xacro:property name="ThumbPitch1Node" value="/${prefix}_forearm/thumbpitch_1"/>
+	<xacro:property name="ThumbPitch2Node" value="/${prefix}_forearm/thumbpitch_2"/>
+    
+</robot>
