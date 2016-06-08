@@ -6,10 +6,10 @@
 
 	<xacro:property name="MiddleFingerPitch1Node" value="/${prefix}_forearm/middlepitch"/>
 
-	<xacro:property name="PinkyPitch1Node" value="/${prefix}_forearm//pinkypitch"/>
+	<xacro:property name="PinkyPitch1Node" value="/${prefix}_forearm/pinkypitch"/>
 
 	<xacro:property name="ThumbRollNode" value="/${prefix}_forearm/thumbroll"/>
-	<xacro:property name="ThumbPitch1Node" value="/${prefix}_forearm/thumbpitch_1"/>
-	<xacro:property name="ThumbPitch2Node" value="/${prefix}_forearm/thumbpitch_2"/>
+	<xacro:property name="ThumbPitch1Node" value="/${prefix}_forearm/thumbpitch1"/>
+	<xacro:property name="ThumbPitch2Node" value="/${prefix}_forearm/thumbpitch2"/>
     
 </robot>
