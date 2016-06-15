@@ -7,5 +7,7 @@
     <Coeff id="JointTorqueLimit_Nm" value="10.0"/>
     <Coeff id="JointSafety_LowerLimit_Rad" value="-3.15"/>
     <Coeff id="JointSafety_UpperLimit_Rad" value="3.15"/>
+    <Coeff id="JointMaxValue" value="3.14159"/>
+    <Coeff id="JointMinValue" value="-3.14159"/>
   </Coeffs>
 </CoeffData>
