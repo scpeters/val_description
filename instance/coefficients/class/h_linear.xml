@@ -1,5 +1,5 @@
 <CoeffData>
-  <Type id="athena" />
+  <Type id="turbodriver" />
   <Processor id="rotary/turbo_bootloader.bin" />
   <ScheduleFile id="turbo.yaml" />
   <Coeffs>

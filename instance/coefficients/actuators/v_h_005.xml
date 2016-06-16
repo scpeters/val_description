@@ -4,13 +4,13 @@
       <FileGenDate date="2014-12-19" time="11:13:39.501828"/>
     </Properties>
     <ClassFile id="h.xml" />
-    <ControllerFile id="h_sv.xml" />
-    <LocationFile id="index.xml"/>
+    <ControllerFile id="h_hall.xml" />
+    <LocationFile id="testbench.xml"/>
     <SensorsFile id="sensors_leonidas.xml" />
     <SafetyFile id="safety.xml" />
     <Coeffs>
         <Coeff id="EncMountingDir" value="1.0" />
-        <Coeff id="EncoderIndexOffset" value="2.97"/>
+        <Coeff id="EncoderIndexOffset" value="1.65"/>
         <Coeff id="JointKinematicDir" value="1.0"/>
         <Coeff id="JointSensors_MotorPosition" value="2.0"/>
         <Coeff id="JointSensors_OutputForce" value="0.0"/>

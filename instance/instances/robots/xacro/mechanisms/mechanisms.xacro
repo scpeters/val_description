@@ -39,19 +39,19 @@
     </Mechanism>
 </xacro:macro>
 
-<xacro:macro name="forearm_new_firmware_mechanism" params="prefix forearm_j1_serial_number forearm_j2_serial_number forearm_j3_serial_number forearm_j4_serial_number forearm_j5_serial_number forearm_j6_serial_number wrist_bottom_serial_number wrist_top_serial_number">
+<xacro:macro name="forearm_new_firmware_mechanism" params="prefix forearm_index_serial_number forearm_middle_serial_number forearm_pinky_serial_number forearm_thumbroll_serial_number forearm_thumbpitch1_serial_number forearm_thumbpitch2_serial_number wrist_bottom_serial_number wrist_top_serial_number">
 
-	<xacro:simple_mechanism name="${IndexFingerPitch1JointName}" serial_number="${forearm_j1_serial_number}" node="${IndexFingerPitch1Node}"/>
+	<xacro:simple_mechanism name="${IndexFingerPitch1JointName}" serial_number="${forearm_index_serial_number}" node="${IndexFingerPitch1Node}"/>
 
-	<xacro:simple_mechanism name="${MiddleFingerPitch1JointName}" serial_number="${forearm_j2_serial_number}" node="${MiddleFingerPitch1Node}"/>
+	<xacro:simple_mechanism name="${MiddleFingerPitch1JointName}" serial_number="${forearm_middle_serial_number}" node="${MiddleFingerPitch1Node}"/>
 
-	<xacro:simple_mechanism name="${PinkyPitch1JointName}" serial_number="${forearm_j3_serial_number}" node="${PinkyPitch1Node}"/>
+	<xacro:simple_mechanism name="${PinkyPitch1JointName}" serial_number="${forearm_pinky_serial_number}" node="${PinkyPitch1Node}"/>
 
-	<xacro:simple_mechanism name="${ThumbRollJointName}" serial_number="${forearm_j4_serial_number}" node="${ThumbRollNode}"/>
+	<xacro:simple_mechanism name="${ThumbRollJointName}" serial_number="${forearm_thumbroll_serial_number}" node="${ThumbRollNode}"/>
 
-	<xacro:simple_mechanism name="${ThumbPitch1JointName}" serial_number="${forearm_j5_serial_number}" node="${ThumbPitch1Node}"/>
+	<xacro:simple_mechanism name="${ThumbPitch1JointName}" serial_number="${forearm_thumbpitch1_serial_number}" node="${ThumbPitch1Node}"/>
 
-	<xacro:simple_mechanism name="${ThumbPitch2JointName}" serial_number="${forearm_j6_serial_number}" node="${ThumbPitch2Node}"/>
+	<xacro:simple_mechanism name="${ThumbPitch2JointName}" serial_number="${forearm_thumbpitch2_serial_number}" node="${ThumbPitch2Node}"/>
 
 	<xacro:two_active_joint_mechanism mechanism_name="${prefix}Wrist" actuator0_name="${WristBottomActuatorName}" actuator1_name="${WristTopActuatorName}" joint0_name="${WristRollJointName}" joint1_name="${WristPitchJointName}" actuator0_serial="${wrist_bottom_serial_number}" actuator1_serial="${wrist_top_serial_number}" actuator0_node="${WristBottomActuatorNode}" actuator1_node="${WristTopActuatorNode}" />
 

@@ -1,12 +1,12 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="forearm_new_firmware_test_serials">
 
-	<xacro:property name="leftWristBottomActuatorSerialNumber" value="v_a_006" />
-	<xacro:property name="leftWristTopActuatorSerialNumber" value="v_b_002" />
-	<xacro:property name="leftforearmJ1SerialNumber" value="v_c_002" />
-	<xacro:property name="leftforearmJ2SerialNumber" value="v_d_001" />
-	<xacro:property name="leftforearmJ3SerialNumber" value="v_d_001" />
-	<xacro:property name="leftforearmJ4SerialNumber" value="v_d_001" />
-	<xacro:property name="leftforearmJ5SerialNumber" value="v_d_001" />
-	<xacro:property name="leftforearmJ6SerialNumber" value="v_d_001" />
+	<xacro:property name="leftWristBottomActuatorSerialNumber" value="v_h_006" />
+	<xacro:property name="leftWristTopActuatorSerialNumber" value="v_h_008" />
+	<xacro:property name="leftforearmIndexSerialNumber" value="v_h_001" />
+	<xacro:property name="leftforearmMiddleSerialNumber" value="v_h_004" />
+	<xacro:property name="leftforearmPinkySerialNumber" value="v_h_002" />
+	<xacro:property name="leftforearmThumbRollSerialNumber" value="v_h_005" />
+	<xacro:property name="leftforearmThumbPitch1SerialNumber" value="v_h_003" />
+	<xacro:property name="leftforearmThumbPitch2SerialNumber" value="v_h_007" />
     
 </robot>

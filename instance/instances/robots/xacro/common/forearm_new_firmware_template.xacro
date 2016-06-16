@@ -7,12 +7,16 @@
 
 	<RobotInstance id="${instance}" />
 
-	<xacro:all_channels/>
+        <Channels>
+    		<Channel id="/left_forearm"/>
+	</Channels>
 
 	<Mechanisms>
 
-		<xacro:forearm_new_firmware_mechanism prefix="left" forearm_j1_serial_number="${leftforearmJ1SerialNumber}" forearm_j2_serial_number="${leftforearmJ2SerialNumber}" forearm_j3_serial_number="${leftforearmJ3SerialNumber}" forearm_j4_serial_number="${leftforearmJ4SerialNumber}" forearm_j5_serial_number="${leftforearmJ5SerialNumber}" forearm_j6_serial_number="${leftforearmJ6SerialNumber}" wrist_bottom_serial_number="${leftWristBottomActuatorSerialNumber}" wrist_top_serial_number="${leftWristTopActuatorSerialNumber}" />
+		<xacro:forearm_new_firmware_mechanism prefix="left" forearm_index_serial_number="${leftforearmIndexSerialNumber}" forearm_middle_serial_number="${leftforearmMiddleSerialNumber}" forearm_pinky_serial_number="${leftforearmPinkySerialNumber}" forearm_thumbroll_serial_number="${leftforearmThumbRollSerialNumber}" forearm_thumbpitch1_serial_number="${leftforearmThumbPitch1SerialNumber}" forearm_thumbpitch2_serial_number="${leftforearmThumbPitch2SerialNumber}" wrist_bottom_serial_number="${leftWristBottomActuatorSerialNumber}" wrist_top_serial_number="${leftWristTopActuatorSerialNumber}" />
 		
 	</Mechanisms>
     
+	<Devices>
+	</Devices>
 </robot>
