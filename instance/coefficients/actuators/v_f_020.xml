@@ -17,8 +17,5 @@
         <Coeff description="" id="JointOutputAPS_MountingGain" value="1.0" />
         <Coeff description="" id="SpringAPS_BitOffset" value="953111084" />
         <Coeff description="" id="SpringAPS_MountingGain" value="-1.0" />
-        <Coeff description="" value="0.01536658" id="LoadCell_NmPerCount"/>
-        <Coeff description="" value="1" id="LoadCell_MountingGain"/>
-        <Coeff description="" value="32800" id="LoadCell_OffsetBits"/>
     </Coeffs>
 </CoeffData>
