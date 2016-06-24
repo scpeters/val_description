@@ -440,6 +440,7 @@ class InstanceFileHandler():
                 cfg = self.cfgnodes[nodeName].getConfig()
             except (KeyError, AttributeError):
                 self.logger.error('Configuration was not found for: {}'.format(nodeName))
+                cfg = None
         return cfg
 
     def getConfigNode(self, nodeName):
