@@ -429,8 +429,11 @@ class InstanceFileHandler():
         if nodeName not in self.getNodeNames():
             raise Exception('Node {} not specified in config source'.format(nodeName))
         elif nodeName not in self.cfgnodes:
-            self.cfgnodes[nodeName] = cfgNode.cfgNode(self.turboPublicProcSources, self.firmware[nodeName],
+            try:
+                self.cfgnodes[nodeName] = cfgNode.cfgNode(self.turboPublicProcSources, self.firmware[nodeName],
                                                       self.dlcache, self.logger)
+            except KeyError:
+                self.logger.error('Node {} could not be initialized because it does not have all of the required properties specified')
 
     def getConfig(self, nodeName):
         if nodeName not in self.cfgnodes:
