@@ -18,13 +18,13 @@
 	<xacro:property name="leftArmJ2SerialNumber" value="v_b_005" />
 	<xacro:property name="leftArmJ3SerialNumber" value="v_f_007" />
 	<xacro:property name="leftArmJ4SerialNumber" value="v_f_008" />
-	<xacro:property name="leftArmJ5SerialNumber" value="v_g_007" />
+	<xacro:property name="leftArmJ5SerialNumber" value="v_g_021" />
 
 	<xacro:property name="rightArmJ1SerialNumber" value="v_a_010" />
 	<xacro:property name="rightArmJ2SerialNumber" value="v_b_008" />
 	<xacro:property name="rightArmJ3SerialNumber" value="v_f_009" />
 	<xacro:property name="rightArmJ4SerialNumber" value="v_f_010" />
-	<xacro:property name="rightArmJ5SerialNumber" value="v_g_006" />
+	<xacro:property name="rightArmJ5SerialNumber" value="v_g_020" />
 
 	<xacro:property name="neckJ1SerialNumber" value="v_g_019" />
 	<xacro:property name="neckJ2SerialNumber" value="v_g_010" />
