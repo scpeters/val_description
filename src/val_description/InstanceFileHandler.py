@@ -438,7 +438,7 @@ class InstanceFileHandler():
         with self.dlcache_l:
             try:
                 cfg = self.cfgnodes[nodeName].getConfig()
-            except KeyError:
+            except (KeyError, AttributeError):
                 self.logger.error('Configuration was not found for: {}'.format(nodeName))
         return cfg
 
