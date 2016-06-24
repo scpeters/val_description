@@ -435,7 +435,7 @@ class InstanceFileHandler():
             except KeyError:
                 self.logger.error('Node {} could not be initialized because it does not have all of the required properties specified')
 
-    def getConfig(self, nodeName):
+    def getFwConfig(self, nodeName):
         if nodeName not in self.cfgnodes:
             self.initNode(nodeName)
         with self.dlcache_l:
