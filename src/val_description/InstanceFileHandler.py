@@ -436,7 +436,10 @@ class InstanceFileHandler():
         if nodeName not in self.cfgnodes:
             self.initNode(nodeName)
         with self.dlcache_l:
-            cfg = self.cfgnodes[nodeName].getConfig()
+            try:
+                cfg = self.cfgnodes[nodeName].getConfig()
+            except KeyError:
+                self.logger.error('Configuration was not found for: {}'.format(nodeName))
         return cfg
 
     def getConfigNode(self, nodeName):
