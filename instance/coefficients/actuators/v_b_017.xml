@@ -13,9 +13,9 @@
         <Coeff description="" id="JointSensors_OutputForce" value="2.0" />
         <Coeff description="1: position sensor derivative, 2: inc enc and spring def derivative" id="JointSensors_OutputVelocity" value="4.0" />
         <Coeff description="Encoder Mounting Direction" id="EncMountingDir" value="-1" />
-        <Coeff description="Electrical angle offset from Index pulse of Encoder" id="EncoderIndexOffset" value="0.351566135883" />
+        <Coeff description="Electrical angle offset from Index pulse of Encoder" id="EncoderIndexOffset" value="0.336326599121" />
         <Coeff description="" id="JointOutputAPS_MountingGain" value="1.0" />
-        <Coeff description="" id="SpringAPS_BitOffset" value="586796526" />
+        <Coeff description="" id="SpringAPS_BitOffset" value="677007647" />
         <Coeff description="" id="SpringAPS_MountingGain" value="-1" />
     </Coeffs>
 </CoeffData>
