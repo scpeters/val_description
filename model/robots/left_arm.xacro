@@ -1,0 +1,57 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="valkyrie">
+
+    <xacro:property name="mesh_root" value="package://val_description/model/meshes"/>
+    <xacro:include filename="$(find val_description)/model/robots/common/xacro/generic_models.xacro" />
+    <xacro:include filename="$(find val_description)/model/robots/common/xacro/common_bodies.xacro" />
+    <xacro:include filename="$(find val_description)/common/xacro/serial_numbers/valkyrie_E_serials.xacro"/>
+    <xacro:include filename="$(find val_description)/common/xacro/api/valkyrie_E_api.xacro"/>
+    <xacro:include filename="$(find val_description)/model/robots/common/xacro/leg/link_names.xacro"/>
+
+    <xacro:property name="prefix" value="left"/>
+    <xacro:property name="reflect" value="1"/>
+
+    <link name="world"/>
+
+    <joint name="fixed" type="fixed">
+        <parent link="world"/>
+        <child link="${TorsoRollLinkName}"/>
+    </joint>
+
+    <link name="${TorsoRollLinkName}">
+      <inertial>
+        <mass value="39.47"/>
+        <origin rpy="0 0 0" xyz="-0.095548 -0.003337 0.243098"/>
+        <inertia ixx="0.87326933" ixy="9.9563e-05" ixz="0.061345211" iyy="1.0108485" iyz="0.00181849" izz="0.77839801"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://val_description/model/meshes/torso/torso.dae"/>
+        </geometry>
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://val_description/model/meshes/torso/torso.dae"/>
+        </geometry>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </collision>
+    </link>
+
+
+    <xacro:make_arm prefix="${prefix}" reflect="${reflect}" arm_root_link="${TorsoRollLinkName}" />
+    <xacro:make_thumb prefix="${prefix}" reflect="${reflect}" thumb_root_link="leftPalm"/>
+    <xacro:make_index_finger prefix="${prefix}" reflect="${reflect}" index_finger_root_link="leftPalm"/>
+    <xacro:make_middle_finger prefix="${prefix}" reflect="${reflect}" middle_finger_root_link="leftPalm"/>
+    <xacro:make_pinky_finger prefix="${prefix}" reflect="${reflect}" pinky_finger_root_link="leftPalm"/>
+
+    <xacro:make_leg prefix="${prefix}" reflect="${reflect}" leg_root_link="world"/>
+    <xacro:make_leg prefix="left" reflect="1" leg_root_link="world"/>
+
+    <xacro:arm_transmissions_hw prefix="${prefix}" reflect="${reflect}"/>
+    <xacro:index_finger_transmissions_hw prefix="${prefix}" reflect="${reflect}" />
+    <xacro:middle_finger_transmissions_hw prefix="${prefix}" reflect="${reflect}"/>
+    <xacro:pinky_finger_transmissions_hw prefix="${prefix}" reflect="${reflect}"/>
+    <xacro:thumb_transmissions_hw prefix="${prefix}" reflect="${reflect}"/>
+
+</robot>
+

@@ -1,13 +1,13 @@
 <CoeffData>
     <ClassFile id="f.xml" />
     <ControllerFile id="f_sv.xml" />
-    <LocationFile id="elbow_pitch.xml" />
+    <LocationFile id="elbow_pitch_left.xml" />
     <SensorsFile id="sensors.xml" />
     <SafetyFile id="safety.xml" />
     <Coeffs>
         <Coeff description="" id="JointKinematicDir" value="-1.0" />
-        <Coeff description="" id="TorqueOffset_Nm" value="0.376958254493" />
-        <Coeff description="" id="PositionOffset_Rad" value="0.695660590278" />
+        <Coeff description="" id="TorqueOffset_Nm" value="17.0" />
+        <Coeff description="" id="PositionOffset_Rad" value="2.59702" />
         <Coeff description="" id="JointSensors_MotorPosition" value="1" />
         <Coeff description="" id="JointSensors_OutputForce" value="2.0" />
         <Coeff description="" id="JointSensors_OutputPosition" value="2.0" />
