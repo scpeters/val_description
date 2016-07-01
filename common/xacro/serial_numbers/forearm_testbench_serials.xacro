@@ -1,12 +1,7 @@
 
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="forearm_testbench">
 
-<<<<<<< HEAD
-	<xacro:property name="testbench_serial_number" value="v_g_006" />
-	<xacro:property name="forearm_serial_number" value="v_h_004" />
-=======
-	<xacro:property name="forearm_yaw_serial_number" value="v_g_016" />
-	<xacro:property name="forearm_serial_number" value="v_h_003" />
->>>>>>> b8620811f7791f2dc838f2dfcf5f21ed5ced2d34
+	<xacro:property name="testbench_serial_number" value="v_g_003" />
+	<xacro:property name="forearm_serial_number" value="v_h_002" />
     
 </robot>

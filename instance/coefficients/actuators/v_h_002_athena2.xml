@@ -20,7 +20,7 @@
     <Coeff description="" value="1" id="Fing3_posKP"/>
     <Coeff description="" value="0" id="Fing3_posKD"/>
     <Coeff description="" value="30" id="Fing3_dutylmt"/>
-    <Coeff description="" value="7828" id="Fing3_APSoffset"/>
+    <Coeff description="" value="7609" id="Fing3_APSoffset"/>
     <Coeff description="" value="762" id="Fing4_elecoffset"/>
     <Coeff description="" value="100" id="Fing4_locmdlmt"/>
     <Coeff description="" value="5214" id="Fing4_hicmdlmt"/>
