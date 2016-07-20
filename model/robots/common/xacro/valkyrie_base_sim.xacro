@@ -6,6 +6,17 @@
       </plugin>
     </gazebo>
 
+    <gazebo>
+      <self_collide>true</self_collide>
+    </gazebo>
+
+    <gazebo reference="leftHipRollLink">
+      <self_collide>false</self_collide>
+    </gazebo>
+    <gazebo reference="rightHipRollLink">
+      <self_collide>false</self_collide>
+    </gazebo>
+
     <xacro:make_pelvis />
     <xacro:make_waist waist_root_link="${Pelvis_Link_Name}" />
     <xacro:make_head head_root_link="${TorsoRollLinkName}" />
